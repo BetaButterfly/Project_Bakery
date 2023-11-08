@@ -1,2 +1,42 @@
-h1 {border: 4px solid black ;
+.main-title {border: 4px solid rgb(141, 121, 121) ;
+}
+.button {
+    color: #faf4ea;
+   background-color: #819857; 
+   border: 2px solid #819857;
+   border-radius: 8px;
+   cursor: pointer ;
+}
+
+.button:hover {
+    color: #465929;
+    background-color: transparent;
+}
+
+.button:focus {
+    color: #465929;
+    background-color: rgb(120, 145, 120);
+}
+.button:active {
+    background-color: cadetblue;
+}
+
+.link {
+    color:#faf4ea;
+}
+
+.link:hover {
+color: #819857;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hero-title {
+    color: #FAF4EA ;
+}
+
+.hero-title span {
+    color: #0819b57;
 }

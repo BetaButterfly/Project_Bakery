@@ -1,42 +1,68 @@
-.main-title {border: 4px solid rgb(141, 121, 121) ;
-}
-.button {
-    color: #faf4ea;
-   background-color: #819857; 
-   border: 2px solid #819857;
-   border-radius: 8px;
-   cursor: pointer ;
+:root {
+    --color-primary-dark: #31261a;
+    --color-primary-light: #faf4ea;
+    --color-brand-light: #819b57;
+    --color-brand-dark: #465929; 
 }
 
-.button:hover {
-    color: #465929;
-    background-color: transparent;
-}
-
-.button:focus {
-    color: #465929;
-    background-color: rgb(120, 145, 120);
-}
-.button:active {
-    background-color: cadetblue;
-}
-
-.link {
-    color:#faf4ea;
-}
-
-.link:hover {
-color: #819857;
+/*Base*/
+body {
+    color: var(--color-primary-dark);
 }
 
 ul {
     list-style-type: none;
 }
 
-.hero-title {
-    color: #FAF4EA ;
+/*Button*/
+
+.button {
+    color: var(--color-primary-light);
+   background-color: var(--color-brand-light);
+   border: 2px solid var(--color-brand-light);
+   border-radius: 8px;
+   cursor: pointer;
 }
 
-.hero-title span {
-    color: #465929 ;
+.button:hover {
+    color: var(--color-brand-dark);
+    background-color: transparent;
+}
+
+/*button focus
+.button:focus {
+    color: var(-color-brand-dark);
+    background-color: rgb(120, 145, 120);
+}
+
+.button:active {
+    background-color: cadetblue;
+}*/
+
+
+/*Link*/
+.link {
+    color: var(--color-primary-light);
+}
+
+.link:hover {
+color:  var(--color-brand-light);
+}
+
+/*Hero section*/
+.hero-title {
+    color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+    color: var(--color-brand-light);
+}
+
+/*Advantages section*/
+.advantages-list {
+    color: var(--color-primary-light);
+   background-color: var(---color-brand-light);
+}
+.section-title .accent {
+    color: var(--color-brand-dark);
 }

@@ -1,0 +1,36 @@
+.box {
+    /*display: inline;*/
+    /*display: block;*/
+    /*display: inline-block;*/
+    display: none;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background-color:burlywood ;
+    padding: 10px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    margin: 10px;
+}
+/*.box:last-child {
+    background-color: gold;
+}*/
+
+/*.box:first-child {
+    background-color: gold;*/
+
+/*.box:not(:first-child) {
+    background-color: gold;
+}*/
+
+/*.box:nth-child(2) {
+    background-color: gold;
+}*/
+
+/*.box:nth-child(even) {
+    background-color: gold;
+}*/
+
+.box:nth-child(odd) {
+    background-color: gold;
+}

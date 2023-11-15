@@ -209,11 +209,11 @@ ul {
   font-weight: 900;
   line-height: 1.3;
 }
-.section-title.centered {
+.section-title .centered {
   text-align: center;
 }
 
-.section-title.accent {
+.section-title .accent {
   color: var(--color-brand-dark);
 }
 
@@ -237,12 +237,12 @@ ul {
   margin-bottom: 42px;
 }
 
-.traditions-text.brand {
+.traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
 }
 
-.traditions-text.uppercase {
+.traditions-text .uppercase {
   text-transform: uppercase;
 }
 

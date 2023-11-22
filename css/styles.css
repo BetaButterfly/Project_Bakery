@@ -560,11 +560,13 @@ ul {
 /*Form*/
 
 .form-field {
+  position: relative;
   margin-bottom: 32px;
 }
 
 
 .form-label {
+  position: absolute;
   display: block;
 }
 

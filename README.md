@@ -4,7 +4,7 @@
 
 # Для того, щоб запустити проект, слідуйте наступним крокам:
 
-1. Склонуйте репозиторій: git clone https://github.com/yourusername/ProjectBakery.git
+1. Склонуйте репозиторій:[ git clone https://github.com/yourusername/ProjectBakery.git](https://github.com/BetaButterfly/Project_Bakery.git)
 2. Відкрийте index.html у вашому веб-браузері
 
 # Структура проекту:

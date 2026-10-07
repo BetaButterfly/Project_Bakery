@@ -1,0 +1,42 @@
+name: Compile SCSS
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scss/**/*.scss'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install sass
+        run: npm install -g sass
+
+      - name: Compile SCSS to CSS
+        run: sass scss/main.scss css/main.min.css --style=compressed --no-source-map
+
+      - name: Commit compiled CSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add css/main.min.css
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: compile SCSS to CSS"
+            git push
+          fi

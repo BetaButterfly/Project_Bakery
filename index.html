@@ -13,7 +13,7 @@
     <div class="container">
       <div class="header__container">
         <nav class="header__nav">
-          <a href="/">
+          <a href="./">
             <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
           </a>
           <ul class="header__menu">
@@ -31,12 +31,13 @@
             </li>
           </ul>
         </nav>
-        <button class="button modal-btn-open" type="button">
+        <button class="button modal-btn-open" type="button" aria-haspopup="dialog">
           Замовити дзвінок
         </button>
       </div>
     </div>
   </header>
+
   <main>
     <section class="hero-section">
       <div class="container">
@@ -45,6 +46,7 @@
         </h1>
       </div>
     </section>
+
     <section class="advantages-section">
       <div class="container">
         <h2 class="visually-hidden">Наші переваги</h2>
@@ -55,6 +57,7 @@
         </ul>
       </div>
     </section>
+
     <section class="traditions-section section" id="traditions-section">
       <div class="container">
         <div class="traditions-section__container">
@@ -67,10 +70,10 @@
                 shop bakery
               </span>
               - це пекарня,
-              яка взяла все найкраще i зберегла смак традиційної випічки та
+              яка взяла все найкраще і зберегла смак традиційної випічки та
               натуральність інгредієнтів.
             </p>
-            <p class="traditions-section__text  traditions-section__text--limited">
+            <p class="traditions-section__text traditions-section__text--limited">
               Ми працюємо як найвідоміші мережі -
               <span class="text-brand text-bold">5 хвилин і замовлення готове.</span>
               А ще у наших пекарень стильний дизайн та висока якість
@@ -81,6 +84,7 @@
         </div>
       </div>
     </section>
+
     <section class="section" id="chefs-section">
       <div class="container">
         <h2 class="chefs-section__title section__title section__title--centered">
@@ -90,7 +94,7 @@
         <ul class="chefs-section__list">
           <li class="chefs-section__item">
             <article class="chef-card">
-              <img class="chef-card__images" src="./images/nastya-chef.jpg" alt="Nastya-chef" />
+              <img class="chef-card__images" src="./images/nastya-chef.jpg" alt="Настя, шеф-кухар" />
               <div>
                 <h3 class="chef-card__title">Настя</h3>
                 <div class="chef-card__text">
@@ -101,7 +105,7 @@
                   </p>
                   <p>
                     Я випічу для вас <br />
-                    найсмачніщі вироби!
+                    найсмачніші вироби!
                   </p>
                 </div>
               </div>
@@ -109,16 +113,16 @@
           </li>
           <li class="chefs-section__item">
             <article class="chef-card">
-              <img class="chef-card__images" src="./images/vlad-chef.jpg" alt="Vlad-chef" />
+              <img class="chef-card__images" src="./images/vlad-chef.jpg" alt="Влад, шеф-кухар" />
               <div>
                 <h3 class="chef-card__title">Влад</h3>
                 <p class="chef-card__text">Привіт, я Влад!</p>
                 <p class="chef-card__text">
-                  Мій кондитерський стаж вже 18 років. SHOP BEKERY - це наша
+                  Мій кондитерський стаж вже 18 років. SHOP BAKERY - це наша
                   любов, з якою ми ділимось з Вами через випічку.
                 </p>
                 <p class="chef-card__text">
-                  Я зроблю для вас унікальну начинку на будь який смак!
+                  Я зроблю для вас унікальну начинку на будь-який смак!
                 </p>
               </div>
             </article>
@@ -126,22 +130,23 @@
         </ul>
       </div>
     </section>
+
     <section class="formats-section section" id="formats-section">
       <div class="container">
         <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
         <div class="formats-section__container">
-          <button class="carousel-button" type="button">
-            <svg class="carousel-arrow" width="16" height="16">
+          <button class="carousel-button" type="button" aria-label="Попередній формат">
+            <svg class="carousel-arrow" width="16" height="16" aria-hidden="true">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
           <ul class="formats-section__list">
             <li class="formats-section__item">
               <article class="format-card">
-                <img class="format-card__image" src="./images/walrus-format.jpg" alt="Walrus format" />
+                <img class="format-card__image" src="./images/walrus-format.jpg" alt="Формат Walrus" />
                 <h3 class="format-card__title" lang="en">Walrus</h3>
                 <div class="format-card__text">
-                  <p>Площа: до 120 м2</p>
+                  <p>Площа: до 120 м²</p>
                   <p>Меню: розширене меню</p>
                   <p>
                     Штат: 2 продавці-касири, 2 пекарі, 2 помічника пекаря, 2
@@ -153,10 +158,10 @@
             </li>
             <li class="formats-section__item">
               <article class="format-card">
-                <img class="format-card__image" src="./images/horseshoe-format.jpg" alt="Horseshoe format" />
+                <img class="format-card__image" src="./images/horseshoe-format.jpg" alt="Формат Horseshoe" />
                 <h3 class="format-card__title" lang="en">Horseshoe</h3>
                 <div class="format-card__text">
-                  <p>Площа: до 120 м2</p>
+                  <p>Площа: до 120 м²</p>
                   <p>Меню: розширене меню</p>
                   <p>
                     Штат: 2 продавці-касири, 2 пекарі, 2 помічника пекаря, 2
@@ -168,10 +173,10 @@
             </li>
             <li class="formats-section__item">
               <article class="format-card">
-                <img class="format-card__image" src="./images/handlebar-format.jpg" alt="Handlebar format" />
+                <img class="format-card__image" src="./images/handlebar-format.jpg" alt="Формат Handlebar" />
                 <h3 class="format-card__title" lang="en">Handlebar</h3>
                 <div class="format-card__text">
-                  <p>Площа: до 120 м2</p>
+                  <p>Площа: до 120 м²</p>
                   <p>Меню: розширене меню</p>
                   <p>
                     Штат: 2 продавці-касири, 2 пекарі, 2 помічника пекаря, 2
@@ -182,14 +187,15 @@
               </article>
             </li>
           </ul>
-          <button class="carousel-button next" type="button">
-            <svg class="carousel-arrow" width="16" height="16">
+          <button class="carousel-button next" type="button" aria-label="Наступний формат">
+            <svg class="carousel-arrow" width="16" height="16" aria-hidden="true">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
       </div>
     </section>
+
     <section class="contact-section section" id="contact-section">
       <div class="container">
         <div class="contact-section__container">
@@ -200,24 +206,24 @@
             <p>Заповни форму, щоб з тобою зв'язалися!</p>
             <form name="contact-form" autocomplete="off" novalidate>
               <div class="contact-section__form-field input">
-                <label class="input__label visually-hidden" for="user-name">
+                <label class="input__label visually-hidden" for="contact-user-name">
                   Ім'я
                 </label>
-                <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Ім'я" required />
+                <input class="input__control" type="text" name="user-name" id="contact-user-name" placeholder="Ім'я" required />
               </div>
 
               <div class="contact-section__form-field input">
-                <label class="input__label visually-hidden" for="user-tel">
+                <label class="input__label visually-hidden" for="contact-user-tel">
                   Телефон
                 </label>
-                <input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required />
+                <input class="input__control" type="tel" name="user-tel" id="contact-user-tel" placeholder="Телефон" required />
               </div>
 
               <div class="contact-section__form-field input">
-                <label class="form-label visually-hidden" for="user-email">
+                <label class="input__label visually-hidden" for="contact-user-email">
                   Електронна пошта
                 </label>
-                <input class="input__control" type="email" name="user-email" id="user-email"
+                <input class="input__control" type="email" name="user-email" id="contact-user-email"
                   placeholder="Електронна пошта" required />
               </div>
 
@@ -231,63 +237,63 @@
             </form>
           </div>
           <iframe class="contact-section__map"
+            title="Мапа: пекарня на вулиці Січових Стрільців, 54, Київ"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spt!4v1699367698814!5m2!1suk!2spt"
-            width="603" height="595" style="border: 0" allowfullscreen="" loading="lazy"
+            allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-container">
         <nav class="footer-nav">
           <div class="footer-logo">
-            <a href="#">
+            <a href="./">
               <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
           </div>
           <ul class="footer-menu">
-            <li><a class="link" href="#" target="_blank">Франшиза</a></li>
+            <li><a class="link" href="#">Франшиза</a></li>
             <li>
-              <a class="link" href="#traditions-section" target="_blank">Наші традиції</a>
+              <a class="link" href="#traditions-section">Наші традиції</a>
             </li>
-            <li><a class="link" href="#formats-section" target="_blank">Формати</a></li>
-            <li><a class="link" href="#contact-section" target="_blank">Контакти</a></li>
+            <li><a class="link" href="#formats-section">Формати</a></li>
+            <li><a class="link" href="#contact-section">Контакти</a></li>
           </ul>
         </nav>
         <address class="footer-address">
           <ul class="address-list">
             <li>
-              <a class="address-link" href="tel:+380960000007">+ 38 (096)000 00 07</a>
+              <a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a>
             </li>
             <li>
               <a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
             </li>
             <li>
-              <a class="address-link" href="https://maps.app.goo.gl/nTppxM6HM2Ah8g9s6" target="_blank">
+              <a class="address-link" href="https://maps.app.goo.gl/nTppxM6HM2Ah8g9s6" target="_blank" rel="noopener noreferrer">
                 Україна, м. Київ. Вулиця Січових Стрільців, 54
               </a>
             </li>
             <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
+              <a href="#" aria-label="Facebook">
+                <svg class="address-icon" width="32" height="32" aria-hidden="true">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
-                <!--facebook icon-->
               </a>
             </li>
             <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
+              <a href="#" aria-label="Instagram">
+                <svg class="address-icon" width="32" height="32" aria-hidden="true">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
-                <!--instagram icon-->
               </a>
             </li>
           </ul>
           <div class="address-info">
-            <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
+            <a class="address-link" href="#">Політика конфіденційності</a>
             <p class="address-copyright">&copy; 2022 Дані захищені</p>
           </div>
         </address>
@@ -295,27 +301,27 @@
     </div>
   </footer>
 
-  <div class="backdrop">
+  <div class="backdrop backdrop__is-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal">
-      <button class="modal__btn-close modal-btn-close" type="button">Close</button>
-      <h2>Замовити дзвінок</h2>
+      <button class="modal__btn-close modal-btn-close" type="button" aria-label="Закрити">Close</button>
+      <h2 id="modal-title">Замовити дзвінок</h2>
       <p>Залиште заявку та наш спеціаліст зв'яжеться з Вами!</p>
       <form name="modal-form" autocomplete="on">
         <div class="modal__form-field input">
-          <label class="input__label visually-hidden" for="user-name">Ім'я</label>
-          <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Ім'я" minlength="2"
+          <label class="input__label visually-hidden" for="modal-user-name">Ім'я</label>
+          <input class="input__control" type="text" name="user-name" id="modal-user-name" placeholder="Ім'я" minlength="2"
             maxlength="20" required />
         </div>
 
         <div class="modal__form-field input">
-          <label class="input__label visually-hidden" for="user-tel">Телефон</label>
-          <input class="input__control" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required
+          <label class="input__label visually-hidden" for="modal-user-tel">Телефон</label>
+          <input class="input__control" type="tel" name="user-tel" id="modal-user-tel" placeholder="Телефон" required
             pattern="^\+[0-9]{12}" />
         </div>
 
         <div class="modal__form-field input">
-          <label class="Input__label visually-hidden" for="user-email">Електронна пошта</label>
-          <input class="input__control" type="email" name="user-email" id="user-email" placeholder="Електронна пошта"
+          <label class="input__label visually-hidden" for="modal-user-email">Електронна пошта</label>
+          <input class="input__control" type="email" name="user-email" id="modal-user-email" placeholder="Електронна пошта"
             required />
         </div>
 

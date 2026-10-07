@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Сучасна пекарня</title>
   <link rel="stylesheet" href="./css/main.min.css">
-  <!-- <link rel="stylesheet" href="./css/fixes.css"> -->
-
 </head>
 
 <body>
@@ -36,7 +34,28 @@
         <button class="button modal-btn-open" type="button" aria-haspopup="dialog">
           Замовити дзвінок
         </button>
+        <button class="header__burger menu-btn-open" type="button" aria-label="Відкрити меню">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
+    </div>
+
+    <div class="mobile-menu">
+      <button class="mobile-menu__btn-close menu-btn-close" type="button" aria-label="Закрити меню">
+        <svg width="24" height="24" aria-hidden="true">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu__list">
+          <li><a class="mobile-menu__link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="mobile-menu__link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="mobile-menu__link" href="#formats-section">Формати</a></li>
+          <li><a class="mobile-menu__link" href="#contact-section">Контакти</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -339,6 +358,7 @@
   </div>
 
   <script src='./js/modal.js'></script>
+  <script src='./js/mobile-menu.js'></script>
 </body>
 
 </html>

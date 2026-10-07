@@ -29,21 +29,22 @@
     padding-top: 20px;
 
     &__container {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
       gap: 20px;
     }
 
     &__nav {
-      flex-direction: column;
+      flex-direction: row;
       gap: 20px;
-      width: 100%;
     }
 
     &__menu {
-      flex-direction: column;
-      gap: 16px;
-      align-items: center;
-      width: 100%;
+      display: none;
+    }
+
+    &__burger {
+      display: block;
     }
   }
 
@@ -268,6 +269,7 @@
   .formats-section__list {
     flex-direction: row;
   }
+
   .formats-section__item {
     flex-basis: calc((100% - 40px) / 3);
   }

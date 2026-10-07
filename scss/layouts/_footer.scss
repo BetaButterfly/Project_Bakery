@@ -47,9 +47,16 @@
   flex-grow: 1;
 }
 
-.address-list,
-.address-info {
+.address-list {
   flex-grow: 1;
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+  text-align: right;
 }
 
 .address-link {
@@ -73,4 +80,6 @@
 
 .address-copyright {
   font-size: 14px;
+  color: var(--color-primary-light);
+  opacity: 0.6;
 }

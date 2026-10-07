@@ -167,8 +167,9 @@
     }
   }
 
+  /* ===== Footer — мобільна версія ===== */
   .footer {
-    padding: 24px 0;
+    padding: 32px 0;
 
     &::before,
     &::after {
@@ -178,19 +179,49 @@
 
   .footer-container {
     flex-direction: column;
-    gap: 24px;
+    gap: 32px;
   }
 
   .footer-nav,
   .footer-address {
     flex-direction: column;
     flex-basis: 100%;
+    gap: 24px;
+  }
+
+  .footer-logo,
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 16px;
   }
 
-  .footer-menu,
   .address-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Телефон, email, адреса — на всю ширину */
+  .address-list li:nth-child(-n + 3) {
+    flex-basis: 100%;
     text-align: center;
+  }
+
+  /* Соцмережі — в рядок */
+  .address-list li:nth-last-child(-n + 2) {
+    flex-basis: auto;
+  }
+
+  .address-info {
+    text-align: center;
+    gap: 12px;
+  }
+
+  .address-link {
+    font-size: 14px;
   }
 
   .modal {

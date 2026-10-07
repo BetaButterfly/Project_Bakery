@@ -94,3 +94,15 @@
   .form-terms { font-size: 11px; }
   .modal { padding: 24px 16px; border-radius: 16px; }
 }
+
+/* ===== Примусово повертаємо картки форматів у рядок на десктопі ===== */
+@media screen and (min-width: 769px) {
+  .formats-section__list {
+    flex-direction: row !important;
+  }
+  .formats-section__item {
+    flex-basis: calc((100% - 40px) / 3) !important;
+  }
+}
+  
+

@@ -262,3 +262,13 @@
     border-radius: 16px;
   }
 }
+
+/* Примусово повертаємо картки форматів у рядок на десктопі */
+@media screen and (min-width: 769px) {
+  .formats-section__list {
+    flex-direction: row;
+  }
+  .formats-section__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}

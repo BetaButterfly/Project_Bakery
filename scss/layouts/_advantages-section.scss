@@ -5,9 +5,9 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    gap: 40;
+    gap: 40px;
   }
-  
+
   &__item {
     color: var(--color-primary-light);
     font-size: 20px;
